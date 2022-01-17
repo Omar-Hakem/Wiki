@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block body %}
+<h3>You Can Edit This Page Content Here:</h3> <br>
+<form action="{% url 'encyclopedia:editContent' title %}" method="POST">
+  {% csrf_token %}
+  {{editContentForm}}
+  <br>
+  <input type="submit" value="Save">
+</form>
+{% endblock %}

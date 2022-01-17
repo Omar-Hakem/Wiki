@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block body %}
+{% if not content %}
+<h2>Oops!! Page not found</h2>
+<br>
+<h2>404</h2>
+<br>
+<h3>We Can't Find The Requested Page</h3>
+{% else %}
+{{content|safe}}
+{% endif %}
+<br><br>
+{% if title %}
+<a href="{% url 'encyclopedia:editContent' title %}">Edit This Page Content</a>
+{% endif %}
+{% endblock %}
+<!-- {% url 'encyclopedia:editEntryContent' title %} -->

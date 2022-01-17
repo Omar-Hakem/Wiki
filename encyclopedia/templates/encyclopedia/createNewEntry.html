@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Create New Entry
+{% endblock %}
+
+{% block body %}
+<h2>Submit The Page Name and The Markdown Content of The Page:</h2>
+<br>
+<br>
+<br>
+<form action="{% url 'encyclopedia:createNewEntry' %}" method="POST">
+  {% csrf_token %}
+  {{newEntryForm}}
+  <br>
+  <br>
+  <input type="submit" value="Save">
+</form>
+{% endblock %}

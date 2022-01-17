@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+
+{% block title %}
+{{title}}
+{% endblock %}
+
+{% block body %}
+<h1>Error!</h1>
+<br><br>
+<h2>Oops!! You Submitted An Entry Title That Already Exists</h2>
+<br>
+<h2><a href="{% url 'encyclopedia:createNewEntry' %}">Try Another One</a></h2>
+{% endblock %}
