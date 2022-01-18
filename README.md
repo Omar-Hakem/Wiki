@@ -22,11 +22,11 @@ the website is providing a link that when is clicked would show a random entry f
 ## Installation
 - Clone the repository , use  `git@github.com:Omar-Hakem/Wiki.git` 
 - #### open terminal and change the Directory to the project directory, use the following commands:
-  ##### cd Wiki
-  ##### python -m venv venv
-  ##### venv/Scripts/activate
-  ##### pip install -e 
-  ##### python manage.py runserver
+  ##### ``` cd Wiki ```
+  ##### ``` python -m venv venv ```
+  ##### ``` venv/Scripts/activate ```
+  ##### ``` pip install -e ```
+  ##### ``` python manage.py runserver ```
 - then open your browser and enter the following url:
   ##### localhost:8000/encyclopedia
 
@@ -38,5 +38,5 @@ the website is providing a link that when is clicked would show a random entry f
 ## Author
 
 ## 👤 Omar Abd ElHakem
-- GitHub: [@githubhandle](https://github.com/Omar-Hakem)
+- GitHub: [@Omar-Hakem](https://github.com/Omar-Hakem)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/omar-abd-elhakem-abd-elfattah94/)
