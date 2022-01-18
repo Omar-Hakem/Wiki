@@ -25,7 +25,7 @@ the website is providing a link that when is clicked would show a random entry f
   ##### ``` cd Wiki ```
   ##### ``` python -m venv venv ```
   ##### ``` venv/Scripts/activate ```
-  ##### ``` pip install -e ```
+  ##### ``` pip install -e . ```
   ##### ``` python manage.py runserver ```
 - then open your browser and enter the following url:
   ##### localhost:8000/encyclopedia
